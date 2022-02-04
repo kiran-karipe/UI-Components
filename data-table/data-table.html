@@ -15,12 +15,25 @@
     text-align: left;
     padding: 8px;
   }
+
+  .search {
+    margin-bottom: 2%;
+    display: flex;
+  }
+
+  #input {
+    width: 75%;
+    margin-right: 2%;
+  }
 </style>
 <body>
   <div class="main">
-    <button id="showButton">
-      Show Table
-    </button>
+    <div class="search">
+      <input id="input" placeholder="search here"/>
+      <button id="showButton">
+        Show Results
+      </button>
+    </div>
     <table id="dataTable">
     
     </table>
