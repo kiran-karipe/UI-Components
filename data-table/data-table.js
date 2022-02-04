@@ -23,7 +23,7 @@
   buttonElement.addEventListener('click', showDataTable);
   
   function showDataTable() {
-  	const data = getTableData();
+    const data = getTableData();
     const columns = Object.keys(data[0]);
     const tableHead = createTableHeader(columns);
     tableElement.appendChild(tableHead);
@@ -32,8 +32,8 @@
   }
   
   function createTableHeader(columns) {
-  	const theadElement = document.createElement('thead');
-  	const trElement = document.createElement('tr');
+    const theadElement = document.createElement('thead');
+    const trElement = document.createElement('tr');
     columns.forEach(column => {
     	const thElement = document.createElement('th');
       thElement.innerHTML = column;
@@ -44,7 +44,7 @@
   }
   
   function createTableBody(tableData) {
-  	const tbodyElement = document.createElement('tbody');
+    const tbodyElement = document.createElement('tbody');
     
     tableData.forEach(obj => {
 	    const trElement = document.createElement('tr');
